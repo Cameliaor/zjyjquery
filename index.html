@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css样式/index.css">
+</head>
+
+<body>
+  <div class="background-container"></div>
+  <div class="content">
+    <div class="nav">
+      <div class="logo">
+        <img src="./images/image.png" alt="">
+      </div>
+      <div class="buttom_box">
+        <input type="text" name="" id="" placeholder="输入搜索内容">
+        <button>搜索</button>
+      </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="daohang">
+      <div class="part">
+        <ul>
+          <li class="highlight"><a href="./index.html">简介</a></li>
+          <li><a href="./index1.html">敦煌介绍</a></li>
+          <li><a href="./index1.html">壁画赏析</a></li>
+          <li><a href="./index1.html">用户注册</a></li>
+          <li><a href="./login.html">用户登录</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="lunbo">
+      <img src="./images/lunbo1.png" alt="">
+    </div>
+    <!-- 敦煌简介 -->
+    <div class="introduction">
+      <div class="xiaobiao">
+        <p>------ &nbsp;&nbsp;&nbsp;敦煌简介&nbsp;&nbsp;&nbsp;------</p>
+      </div>
+      <div class="jieshao">
+        <div class="tupian">
+          <img src="./images/jieshao.png" alt="">
+        </div>
+        <div class="wenzi">
+          <p>
+            敦煌，位于中国甘肃省西部，是一座历史悠久的文化名城，以其丰富的历史遗迹和独特的地理位置闻名于世。敦煌最著名的景点是莫高窟，这是一组包含约735个洞窟的佛教艺术宝库，内有大量精美的壁画和雕塑，时间跨度从十六国时期到元代，展示了千余年间不同风格的艺术成就。
+            敦煌不仅是古代丝绸之路的重要节点，还保存了大量的历史文献资料
+            敦煌不仅是古代丝绸之路的重要节点，还保存了大量的历史文献资料
+            敦煌不仅是古代丝绸之路的重要节点。对研究古代中亚及中国文化有着不可估量的价值。因其独特的历史文化价值，敦煌莫高窟被联合国教科文组织列为世界文化遗产。
+            简而言之，敦煌是一个融合了深厚文化底蕴与壮丽自然景观的地方，是探索中国古代文明和丝绸之路不可或缺的一站。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 手风琴介绍图片 -->
+    <div class="shoufengqing">
+      <div class="title">------ &nbsp;&nbsp;&nbsp;敦煌妙音&nbsp;&nbsp;&nbsp;------</div>
+    </div>
+    <!-- 梦回敦煌 -->
+    <div class="shoufengqing">
+      <div class="title">------ &nbsp;&nbsp;&nbsp;梦回敦煌&nbsp;&nbsp;&nbsp;------</div>
+    </div>
+    <!-- 敦煌名画 -->
+    <div class="shoufengqing fangda">
+      <div class="title">------ &nbsp;&nbsp;&nbsp;敦煌名画&nbsp;&nbsp;&nbsp;------</div>
+      <div class="tp">
+        <img src="./images/minghua1.png" alt="">
+        <img src="./images/minghua2.png" alt="">
+        <img src="./images/minghua3.png" alt="">
+        <img src="./images/minghua4.png" alt="">
+      </div>
+    </div>
+    <script src="D:/jqurey项目/jquery-3.7.1.min.js"></script>
+    <script>
+      $(".part ul li").mouseenter(function () {
+        let x = $("li").index()
+        $(this).eq(x).addClass('highlight').siblings().removeClass('highlight')
+      })
+    </script>
+  </div>
+</body>
+
+</html>

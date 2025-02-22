@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0px;
+}
+/* 设置背景图 */
+  /* 设置 body 的基本样式 */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    position: relative; /* 确保背景容器可以绝对定位 */
+    overflow: auto; /* 允许页面滚动 */
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+/* 设置背景容器 */
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/beijing.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    opacity: 0.5; /* 背景图透明度 */
+    z-index: -1; /* 确保背景图在内容下方 */
+}
+/* 内容区域样式 */
+.content {
+  padding: 20px;
+  /* color: white; 根据背景图片颜色选择合适的文字颜色 */
+  /* text-align: center; */
+  /* max-width: 600px; */
+  margin: auto;
+  /* background-color: rgba(0, 0, 0, 0.3); 半透明背景色，增强可读性 */
+  border-radius: 8px;
+}
+/* logo */
+.nav {
+  width: 100%;
+  /* height: 110px; */
+  /* border: 1px solid black; */
+  display: flex;
+}
+ul> li{
+  list-style-type: none;
+}
+.logo{
+  width: 300px;
+  height: 80px;
+  /* border: 1px solid black; */
+  margin-left: 250px;
+}
+.logo > img{
+  width: 300px;
+  height: 80px;
+}
+.buttom_box{
+  width: 400px;
+  height: 50px;
+  /* border: 1px solid black; */
+  margin-left: 300px;
+  margin-top: 25px;
+}
+.buttom_box >input{
+  width: 250px;
+  height: 25px;
+  border: 2px solid #8aaeb2;
+  border-radius: 5px;
+}
+.buttom_box > button{
+  width: 40px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #8aaeb2;
+  color: #fff;
+  border: 0;
+}
+/* 导航栏 */
+.daohang{
+  width: 1050px;
+  height: 50px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+  background-color: #8aaeb2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.part {
+  width: 70%;
+  height: 50px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+.part > ul{
+    display: flex;
+    justify-content: space-between; /* 在主轴上均匀分布 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+}
+.part > ul> li{
+  display: inline-block;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  /* border: 1px solid black; */
+  flex: 1; /* 让每个 li 元素尽可能占据相同的空间 */
+  text-align: center; /* 文本居中 */
+  line-height: 50px;
+}
+.highlight{
+  background-color: #c4d5d8;
+}
+/* 轮播图 */
+.lunbo{
+  width: 1250px;
+  height: 400px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+.lunbo > img {
+  width: 100%;
+  height: 400px;
+  
+}
+/* 敦煌简介 */
+.introduction{
+  width: 1050px;
+  height: 251px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.xiaobiao{
+  height: 25px;
+  border-left: 3px solid #8aaeb2;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px auto;
+}
+.jieshao {
+  width: 100%;
+  display: flex;
+  /* height: 154px; */
+  /* border: 2px solid #e9e9e9; */
+}
+.tupian{
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+.tupian>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.wenzi {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  letter-spacing: 0.2em;
+  /* border: 1px solid black; */
+}
+.wenzi p {
+  text-indent: 2em;
+
+}
+/* <!-- 手风琴介绍图片 --> */
+.shoufengqing{
+  width: 1050px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.shoufengqing > .title{
+  width: 100%;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+ /* 敦煌名画 */
+ .tp{
+  /* width: 100%; */
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+ }
+ .tp > img{
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 20%;
+  border-radius: 5%;
+  text-align: center;
+  margin-top: 30px;
+ }
+ .fangda {
+  height: 400px;
+ }
+ .tp>img:hover{
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+ }

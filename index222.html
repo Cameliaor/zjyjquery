@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* width: 700px; */
+            /* height: 450px; */
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            min-width: 600px;
+            max-width: 900px;
+            height: 400px;
+            margin: 20px;
+        }
+       .minx {
+        position: relative;
+        overflow: hidden;
+        min-width: 60px;
+        cursor: pointer;
+        margin: 20px;
+       }
+       img {
+        width: 500px;
+        height: 400px;
+       }
+       .active {
+        flex-grow: 1000px;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="minx" style="background-image: url('./images/minghua4.png');">
+        </div>
+        <div class="minx" style="background-image: url('./images/minghua4.png');">
+        </div>
+        <div class="minx active" style="background-image: url('./images/minghua4.png');">
+        </div>
+        <div class="minx" style="background-image: url('./images/minghua4.png');">
+        </div>
+        <div class="minx" style="background-image: url('./images/minghua4.png');">
+        </div>
+    </div>
+</body>
+</html>

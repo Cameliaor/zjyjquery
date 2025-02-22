@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.background-container {
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background: linear-gradient(135deg, #f4d4bb 0%, #91734f 100%);
+    position: absolute;
+}
+.neirong{
+    width: 880px;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+    top: 220px;
+    box-shadow: 1px 1px 1px 1px #675743;
+    border-radius: 5px;
+    display: flex;
+}
+.image {
+    width: 70%;
+    height: 100%;
+}
+.image > img{
+    width: 100%;
+    height: 100%;
+}
+.shuru {
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+}
+.denglv {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.biaodan{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input  {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #896b47;
+    border-left:0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #6f6f6f;
+    background-color: transparent;
+
+}
+.zhuce {
+    margin-left: 155px;
+}
+.button{
+    width: 210px;
+    height: 50px;
+    border: 1px solid #896b47;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #91734f;
+    margin: 0 auto;
+    line-height: 50px;
+
+}
+span >a{
+    font-weight: bold;
+    color: #eeeeee;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center; 
+}
